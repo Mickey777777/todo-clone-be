@@ -8,6 +8,10 @@ venv/
 env/
 ENV/
 
+# SQLite database files
+*.db
+*.sqlite3
+
 # Flask instance folder
 instance/
 
