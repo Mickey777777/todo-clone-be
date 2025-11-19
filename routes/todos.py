@@ -7,7 +7,7 @@ todos_bp = Blueprint('todos', __name__)
 
 @todos_bp.route('/api/todos', methods=['GET'])
 def get_todos():
-    user = User.query.filter_by(username='test').first()\
+    user = User.query.filter_by(username='test').first()
     
     if not user:
         return jsonify({
